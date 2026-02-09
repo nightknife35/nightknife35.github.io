@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-page="gallery">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Woodwork Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <nav class="top-nav">
+        <div class="left">
+            <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+            <a href="index.html" class="nav-link active" data-page="gallery">Gallery</a>
+            <a href="about.html" class="nav-link" data-page="about">About</a>
+        </div>
+        <div class="right">
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </nav>
+
+    <header style="height: 70vh;">
+        <div class="hero-image">
+            <img src="images/img0.jpg" alt="Featured Woodwork" class="hero-img">
+            <div class="hero-overlay">
+                <h1>Small Woodwork Gallery</h1>
+                <p>Handcrafted treasures from sustainable wood</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Side Panel -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                <h3 id="sidebar-title">Filter Gallery</h3>
+                <button class="close-sidebar" id="close-sidebar">&times;</button>
+            </div>
+            <ul class="filter-list" id="filter-list">
+                <!-- Populated by JS -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="main-content" id="main-content">
+        <main id="page-content">
+            <!-- Dynamic content populated by JS -->
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
